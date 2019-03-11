@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Feng Chia University InfoWindow</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        #map {
+            height: 400px;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+
+        function initMap() {
+            var map;
+            var uluru = { lat: 24.179002, lng: 120.648397 };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 16,
+                center: uluru,
+                mapTypeId: 'terrain'
+            });
+
+            var contentString = '<div>' +
+                '<h3>Feng Chia University</h3>' +
+                '<img src="http://www.fcu.edu.tw/wSite/publicfile/Attachment/f1249733368114.jpg" width="50px" height="50px" >' +
+                '</div>'
+
+            var infowindow = new google.maps.InfoWindow({
+                content: contentString
+            });
+
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+
+
+            marker.addListener('click', function () {
+                infowindow.open(map, marker);
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA_slr2BLXSKC4_-E6sq_4v2dJaqFK5d9g&callback=initMap"
+        type="text/javascript">
+        </script>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>溫度換算</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th colspan = "2">
+                選擇模式
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <input type="button" value="°C → °F" onClick="do_CF()">
+            </td>
+            <td>
+                <input type="button" value="°F → °C" onClick="do_FC()">
+            </td>
+        </tr>
+    </table>
+
+    <script>
+        function do_CF () {
+            var C = prompt("Please enter the temperature (°C)");
+            var F = 32.0 + (9.0 / 5.0 * C);
+            F = F.toFixed(2);
+            document.write(C +"°C = "+ F + "°F");
+        }
+        function do_FC () {
+            var F = prompt("Please enter the temperature (°F)");
+            var C = (F - 32.0) * 5.0 / 9.0;
+            C = C.toFixed(2);
+            document.write(F + "°F = " + C + "°C");
+        }
+    </script>
+</body>
+
+</html>

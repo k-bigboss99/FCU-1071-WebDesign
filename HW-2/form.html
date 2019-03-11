@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>form.html</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <form id="Form">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" size="15" maxlength="40" name="name" required="required"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" size="15" maxlength="10" name="password" required="required"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" size="25" name="emailaddress" required="required"></td>
+            </tr>
+            <tr>
+                <td>Birthday</td>
+                <td><input type="date" name="date" required="required"></td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td>
+                    <input type="radio" name="gender" value="male" checked>Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">Other
+                </td>
+            </tr>
+            <tr>
+                <td>Expertise</td>
+                <td>
+                    <input type="checkbox" name="Expertise" value="system"> Computer system
+                    <input type="checkbox" name="Expertise" value="software"> Software engineering
+                    <input type="checkbox" name="Expertise" value="internet"> Internet & Information security
+                </td>
+            </tr>
+            <tr>
+                <td>Grade</td>
+                <td>
+                    <select name="grade">
+                        <option value="1"> 大一 </option>
+                        <option value="2"> 大二 </option>
+                        <option value="3"> 大三 </option>
+                        <option value="4"> 大四 </option>
+                    </select>
+                </td>
+            <tr>
+                <td><input type="submit" value="Sign up"></td>
+                <td><input type="reset"  value="Reset form"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>

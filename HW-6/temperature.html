@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Temperature</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-8 col-12">
+                    <label for="inputTemperature" id="inputTemperaturelabel">Temperature:</label>
+                    <input type="text" class="form-control" id="inputTemperature">
+                </div>
+                <div class="form-group col-md-4 col-12">
+                    <label for="modeSelect">Convert To:</label>
+                    <select class="form-control" id="modeSelect">
+                        <option value="Fahrenheit">Fahrenheit</option>
+                        <option value="Celcius">Celcius</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="result">Result:</label>
+                <input type="text" class="form-control" id="result" value="">
+            </div>
+
+            <button type="button" class="btn btn-primary" onClick="convert()">Convert</button>
+            <input class="btn btn-info" type="reset" value="Reset" onClick="clean()">
+        </form>
+    </div>
+
+    <script>
+        function clean(){
+            document.getElementById("inputTemperaturelabel").innerHTML = "Temperature: ";
+            document.getElementById("inputTemperaturelabel").style.backgroundColor = "transparent";
+        }
+
+        function convert() {
+            var output;
+            var input = document.getElementById("inputTemperature").value;
+            var convertmode = document.getElementById("modeSelect").value;
+
+            if (input == "") {
+                document.getElementById("inputTemperaturelabel").innerHTML = "Temperature: (Please input a number)";
+                document.getElementById("inputTemperaturelabel").style.backgroundColor = "yellow";
+            } else {
+                clean();
+                switch (convertmode) {
+                    case "Celcius":
+                        output = (input - 32.0) * 5.0 / 9.0;
+                        break;
+                    case "Fahrenheit":
+                        output = 32.0 + (9.0 / 5.0 * input);
+                        break;
+                    default:
+                        break;
+                }
+                document.getElementById("result").value = output.toFixed(2);
+            }
+        }
+    </script>
+</body>
+
+</html>
