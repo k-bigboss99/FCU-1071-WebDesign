@@ -28,9 +28,9 @@
 
 #### 作業展示說明
 
-![Example Video](http://mselab.iecs.fcu.edu.tw:60080/root/HW-6/raw/master/screenshots/temperature.mp4)
+![Example Video](screenshots/temperature.mp4)
 
 
 手機畫面
 
-![screenshot of ipone](http://mselab.iecs.fcu.edu.tw:60080/root/HW-6/raw/master/screenshots/temperature-mobile.png)
+![screenshot of ipone](screenshots/temperature-mobile.png)
