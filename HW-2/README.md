@@ -6,7 +6,7 @@
 
 如下圖所示, 
 
-![screenshot of links.html](http://mselab.iecs.fcu.edu.tw:60080/root/HW-2/raw/master/screenshots/links.PNG)
+![screenshot of links.html](screenshots/links.PNG)
 
 
 - 網頁的title為Resource Links
