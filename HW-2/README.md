@@ -22,14 +22,14 @@
 
 如下圖所示, 使用HTML表格元素製作個人課表
 
-![screenshot of class_schedule.html](http://mselab.iecs.fcu.edu.tw:60080/root/HW-2/raw/master/screenshots/class_schedule.png)
+![screenshot of class_schedule.html](/screenshots/class_schedule.png)
 
 
 ## 3. form.html
 
 如下圖所示, 使用HTML表單元素製作註冊表單
 
-![screenshot of form.html](http://mselab.iecs.fcu.edu.tw:60080/root/HW-2/raw/master/screenshots/form.png)
+![screenshot of form.html](/screenshots/form.png)
 
 - 姓名, 密碼, EMail, 生日為必填欄位
 - Email格式不正確則無法註冊
