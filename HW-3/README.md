@@ -4,7 +4,7 @@
 
 套用CSS rules後課表呈現如下圖:
 
-![screenshot of class_schedule.html](http://mselab.iecs.fcu.edu.tw:60080/root/HW-3/raw/master/screenshots/table-with-css.png)
+![screenshot of class_schedule.html](screenshots/table-with-css.png)
 
 將所有CSS rules寫在./css/table.css中, CSS rules如下:
 - 表格有黑色框線(border), 且框線只有一條
