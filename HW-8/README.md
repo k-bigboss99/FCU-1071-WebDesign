@@ -31,9 +31,9 @@
 
 #### 作業展示說明
 
-![Example Video](http://mselab.iecs.fcu.edu.tw:60080/root/HW-8/raw/master/screenshots/demo.mp4)
+![Example Video](screenshots/demo.mp4)
 
 
 Web畫面
 
-![screenshot of ipone](http://mselab.iecs.fcu.edu.tw:60080/root/HW-8/raw/master/screenshots/screenshot.png)
+![screenshot of ipone](screenshots/screenshot.png)
